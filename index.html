@@ -38,31 +38,45 @@
 
     <div class="container">
         <div id="showcase">
+
             <div class="showitem" id="hidden">
-                <div id="showitemhelp" class="hidden2">
-                    <p>GEMAROO</p>
-                </div><a href="http:///hd326.github.io/gemaroo"><img src="portfolio/gemaroo.jpg"></a>
+                <div class="picture">
+                    <div id="showitemhelp" class="hidden2">
+                        <p>GEMAROO</p>
+                    </div>
+                    <a href="http:///hd326.github.io/gemaroo"><img src="portfolio/gemaroo.jpg"></a>
+                </div>
             </div>
 
             <div class="showitem" id="hidden">
-                <div id="showitemhelp" class="hidden2">
-                    <p>CHRONICLE CAFE</p>
-                </div><a href="http://hd326.github.io/chronicle-cafe"><img src="portfolio/miracles.jpg"></a>
+                <div class="picture">
+                    <div id="showitemhelp" class="hidden2">
+                        <p>CHRONICLE CAFE</p>
+                    </div>
+                    <a href="http://hd326.github.io/chronicle-cafe">
+                        <img src="portfolio/miracles.jpg">
+                    </a>
+                </div>
             </div>
 
             <div class="showitem" id="hidden">
-                <div id="showitemhelp" class="hidden2">
-                    <p>EMANE</p>
-                </div><a href="http://hd326.github.io/emane"><img src="portfolio/emane.jpg"></a>
+                <div class="picture">
+                    <div id="showitemhelp" class="hidden2">
+                        <p>EMANE</p>
+                    </div><a href="http://hd326.github.io/emane"><img src="portfolio/emane.jpg"></a>
+                </div>
             </div>
 
             <div class="showitem" id="hidden">
-                <div id="showitemhelp" class="hidden2">
-                    <p>BOBS' BURGERHOUSE</p>
-                </div><a href="http://hd326.github.io/bobs-burger"><img src="portfolio/bobs-burger.jpg"></a>
+                <div class="picture">
+                    <div id="showitemhelp" class="hidden2">
+                        <p>BOBS' BURGERHOUSE</p>
+                    </div>
+                    <a href="http://hd326.github.io/bobs-burger">
+                        <img src="portfolio/bobs-burger.jpg"></a>
+                </div>
             </div>
         </div>
-    </div>
     </div>
 
     <div class="container">
@@ -110,17 +124,56 @@
                         <p class="list">MySQL</p>
                         <p class="list">WordPress</p>
                     </div>
-                    <!--<div id="years">
-                        <p class="list">HTML5</p>
-                        <p class="list">CSS3</p>
-                        <p class="list">jQuery</p>
-                        <p class="list">JavaScript</p>
-                        <p class="list">PHP</p>
-                        <p class="list">MySQL</p>
-                        <p class="list">WordPress</p>
-                    </div>-->
+                    <div id="years">
+                        <p class="list">#:</p>
+                        <p class="list">#:</p>
+                        <p class="list">#:</p>
+                        <p class="list">#:</p>
+                        <p class="list">#:</p>
+                        <p class="list">#:</p>
+                        <p class="list">#:</p>
+                    </div>
                 </div>
             </div>
+
+            <script src="jquery-3.2.1.js"></script>
+            <script>
+                /*
+                                                                    $(function() {
+                                                                        var number = $('#actual .list');
+                                                                        for (i = 0; i < number.length; i++) {
+                                                                            var characters = number.text().length;
+                                                                            for (e = 0; e < characters; e++) {
+                                                                                $('#years .list').html(e);
+                                                                            }
+                                                                        }
+                                                                    });
+                                                                    */
+
+                /*$(function() {
+                    var number = $('#actual .list');
+                    for (i = 0; i < number.length; i++) {
+                        var characters = number.text().length;
+                        $('#years .list').html(characters);
+                    }
+                });*/
+
+                /*$(function() {
+                    var number = $('#actual .list');
+                    for (i = 0; i < number.length; i++) {
+                        $('#years .list').html(number[i].text().length);
+                    }
+                });
+                */
+
+                $(function() {
+                    var $list = $('#actual .list');
+                    $('#years .list').text(function(i) {
+                        return $list.eq(i).text().length;
+                    });
+                });
+
+            </script>
 
             <div id="interest">
                 <p>INTERESTS</p>
@@ -136,8 +189,8 @@
         </div>
     </div>
 
-    <div class="container">
 
+    <div class="container">
         <div id="education">
             <p>EDUCATION</p>
             <p class="list">Associates of Science, Web Development</p>
@@ -146,9 +199,7 @@
             <p class="list">JavaScript: Understanding the Weird Parts</p>
             <p class="list">React, Redux</p>
             <p class="list">Advanced CSS, SASS</p>
-
         </div>
-
     </div>
 
     <div class="container">
@@ -196,7 +247,6 @@
             $('#hidden:nth-of-type(2)').fadeIn(1500);
             $('#hidden:nth-of-type(3)').fadeIn(2000);
             $('#hidden:nth-of-type(4)').fadeIn(2500);
-
             $('.showitem').hover(
                 function() {
                     $('img', this).fadeOut(0);
@@ -208,6 +258,7 @@
                 },
             );
         });
+
     </script>
 
     <script>
@@ -216,6 +267,7 @@
 
             });
         });
+
     </script>
 
 
@@ -288,6 +340,7 @@
                     }, 1000, 'linear')
             }
         });
+
     </script>
 
     <script>
@@ -339,6 +392,7 @@
                 }
             });
         });
+
     </script>
 
 

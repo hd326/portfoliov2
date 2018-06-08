@@ -105,10 +105,14 @@ header {
     position: relative;
     z-index: 1;
     border-radius: 1.75px;
+    display: block;
 }
 
 .showitem img {
+    display: block;
     opacity: .75;
+    padding: 50px;
+    width: 100%;
 }
 
 .showitem:hover img {
@@ -132,9 +136,12 @@ header {
     background: linear-gradient(to bottom right, #ffdccd, #ffffff)
 }
 
-.showitem img {
-    padding: 50px;
+.showitem img {}
+
+.picture {
     width: 100%;
+    height: 100%;
+    z-index: 9999;
 }
 
 #hidden {
@@ -154,12 +161,9 @@ header {
     position: absolute;
     width: 100%;
     height: 100%;
-    top: 50%;
 }
 
-.hidden2 {
-    display: none;
-}
+.hidden2 {}
 
 #additional {
     width: 50%;
@@ -236,6 +240,10 @@ header {
     transition: all ease-in .3s;
 }
 
+.list:hover {
+    color: #777777;
+}
+
 #segue {
     width: 35%;
     margin: auto;
@@ -252,18 +260,19 @@ header {
     text-align: left;
 }
 
+/*in case captioning needed*/
+
 #segue #skills-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-
-
 
 #segue #skills .list {
     font-size: 14px;
     line-height: 25px;
     letter-spacing: 2px;
     text-align: left;
+    background-color: ;
 }
 
 #segue #skills #years .list {
@@ -285,6 +294,7 @@ header {
     text-align: right;
     line-height: 25px;
     letter-spacing: 2px;
+    background-color: ;
 }
 
 #segue #interest:hover {
