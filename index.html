@@ -134,16 +134,32 @@
 
             <script src="jquery-3.2.1.js"></script>
             <script>
+                $(function() {
+                    $('#skills').hover(
+                        function() {
+                            $('#skills').css({
+                                'background-color': 'red'
+                            });
+                        },
+                        function() {
+                            $('#skills').css({
+                                'background-color': 'inherit'
+                            });
+                        },
+                    );
+                });
+            </script>
+            <script>
                 /*$(function() {
-                                                                                                    var number = $('#actual .list');
-                                                                                                    for (i = 0; i < number.length; i++) {
-                                                                                                        var characters = number.text().length;
-                                                                                                        for (e = 0; e < characters; e++) {
-                                                                                                            $('#years .list').html(e);
-                                                                                                        }
-                                                                                                    }
-                                                                                                });
-                                                                                                */
+                                                                                                                    var number = $('#actual .list');
+                                                                                                                    for (i = 0; i < number.length; i++) {
+                                                                                                                        var characters = number.text().length;
+                                                                                                                        for (e = 0; e < characters; e++) {
+                                                                                                                            $('#years .list').html(e);
+                                                                                                                        }
+                                                                                                                    }
+                                                                                                                });
+                                                                                                                */
 
                 /*$(function() {
                     var number = $('#actual .list');

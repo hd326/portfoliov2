@@ -296,15 +296,24 @@ header {
     text-align: right;
 }
 
+/*
 #segue #skills:hover {
     background-color: #d5f1ff;
     transition: all ease-in-out .3s;
 }
 
+#segue #interest:hover {
+    background-color: #ffd5d5;
+    transition: all ease-in-out .3s;
+}
+*/
+
 #segue #interest {
     padding: 25px 25px;
     text-align: right;
 }
+
+
 
 #segue #interest .list {
     font-size: 14px;
@@ -314,10 +323,7 @@ header {
     background-color: ;
 }
 
-#segue #interest:hover {
-    background-color: #ffd5d5;
-    transition: all ease-in-out .3s;
-}
+
 
 #segue .list:nth-of-type(1) {
     margin-top: 10px;
