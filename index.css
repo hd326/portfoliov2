@@ -891,6 +891,10 @@ header {
         -o-transform: rotate(90deg);
         transform: rotate(90deg);
     }
+    
+    .container #more-info #more-info-pic-m {
+        
+    }
 
     .container #startproject {
         text-align: center;
