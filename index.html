@@ -40,38 +40,44 @@
         <div id="showcase">
 
             <div class="showitem" id="hidden">
-                <div id="showitemhelp" class="hidden2">
-                    <p>GEMAROO</p>
-                </div>
                 <a href="http:///hd326.github.io/gemaroo">
-                <img src="portfolio/gemaroo.jpg"></a>
+                    <div id="showitemhelp" class="hidden2">
+                        <p>GEMAROO</p>
+                    </div>
+                </a>
+                <img src="portfolio/gemaroo.jpg">
             </div>
 
+
             <div class="showitem" id="hidden">
-                <div id="showitemhelp" class="hidden2">
-                    <p>CHRONICLE CAFE</p>
-                </div>
                 <a href="http://hd326.github.io/chronicle-cafe">
-                        <img src="portfolio/miracles.jpg">
-                    </a>
+                    <div id="showitemhelp" class="hidden2">
+                        <p>CHRONICLE CAFE</p>
+                    </div>
+                </a>
+                <img src="portfolio/miracles.jpg">
             </div>
 
-            <div class="showitem" id="hidden">
-                <div id="showitemhelp" class="hidden2">
-                    <p>EMANE</p>
-                </div><a href="http://hd326.github.io/emane">
-                <img src="portfolio/emane.jpg"></a>
 
+            <div class="showitem" id="hidden">
+                <a href="http://hd326.github.io/emane">
+                    <div id="showitemhelp" class="hidden2">
+                        <p>EMANE</p>
+                    </div>
+                </a>
+                <img src="portfolio/emane.jpg">
             </div>
 
+
             <div class="showitem" id="hidden">
-                <div id="showitemhelp" class="hidden2">
-                    <p>BOBS' BURGERHOUSE</p>
-                </div>
                 <a href="http://hd326.github.io/bobs-burger">
-                        <img src="portfolio/bobs-burger.jpg">
-                        </a>
+                    <div id="showitemhelp" class="hidden2">
+                        <p>BOBS' BURGERHOUSE</p>
+                    </div>
+                </a>
+                <img src="portfolio/bobs-burger.jpg">
             </div>
+
         </div>
     </div>
 
@@ -88,20 +94,23 @@
             -->
             <table>
                 <tr>
-                    <td>H-P Photography</td>
-                    <td>Freelance</td>
-                    <td>2017</td>
+                    <td><a href="https://hd326.github.io/hp-photography">H-P Photography</a></td>
+                    <td><a href="https://hd326.github.io/hp-photography">Freelance</a></td>
+                    <td><a href="https://hd326.github.io/hp-photography">2017</a></td>
                 </tr>
+
                 <tr>
-                    <td>Marigold</td>
-                    <td>UX</td>
-                    <td>2017</td>
+                    <td><a href="https://hd326.githuh.io/marigold">Marigold</a></td>
+                    <td><a href="https://hd326.githuh.io/marigold">UX</a></td>
+                    <td><a href="https://hd326.githuh.io/marigold">2017</a></td>
                 </tr>
+
                 <tr>
-                    <td>Kalafina</td>
-                    <td>Design</td>
-                    <td>2017</td>
+                    <td><a href="https://hd326.github.io/kalafina">Kalafina</td>
+                    <td><a href="https://hd326.github.io/kalafina">Design</a></td>
+                    <td><a href="https://hd326.github.io/kalafina">2017</a></td>
                 </tr>
+
             </table>
         </div>
     </div>
@@ -120,7 +129,7 @@
                         <p class="list">MySQL</p>
                         <p class="list">WordPress</p>
                     </div>
-                    <div id="years">
+                    <!--<div id="years">
                         <p class="list">#:</p>
                         <p class="list">#:</p>
                         <p class="list">#:</p>
@@ -128,7 +137,7 @@
                         <p class="list">#:</p>
                         <p class="list">#:</p>
                         <p class="list">#:</p>
-                    </div>
+                    </div>-->
                 </div>
             </div>
 
@@ -138,7 +147,8 @@
                     $('#skills').hover(
                         function() {
                             $('#skills').css({
-                                'background-color': 'red'
+                                'background-color': '#d5f1ff',
+                                'transition': 'all ease-in-out .3s'
                             });
                         },
                         function() {
@@ -147,37 +157,75 @@
                             });
                         },
                     );
+
+                    $('#interest').hover(
+                        function() {
+                            $('#interest').css({
+                                'background-color': '#ffd5d5',
+                                'transition': 'all ease-in-out .3s'
+                            });
+                        },
+                        function() {
+                            $('#interest').css({
+                                'background-color': 'inherit'
+                            });
+                        },
+                    );
+
+
+                    $('#additional tr').hover(
+                        function() {
+                            $(this).css({
+                                'background': 'linear-gradient(to right, #82e0ff, #ccffd3)',
+                                'color': 'white',
+                                'transition': 'all ease-in .3s'
+                            });
+                            $('#additional a', this).css({
+                                'color': 'white',
+                                'transition': 'all ease-in .3s'
+                            });
+                        },
+                        function() {
+                            $(this).css({
+                                'background': 'inherit',
+                                'color': 'inherit'
+                            });
+                            $('#additional a').css({
+                                'color': 'inherit'
+                            });
+                        },
+                    );
                 });
             </script>
             <script>
-                /*$(function() {
-                                                                                                                    var number = $('#actual .list');
-                                                                                                                    for (i = 0; i < number.length; i++) {
-                                                                                                                        var characters = number.text().length;
-                                                                                                                        for (e = 0; e < characters; e++) {
-                                                                                                                            $('#years .list').html(e);
-                                                                                                                        }
-                                                                                                                    }
-                                                                                                                });
-                                                                                                                */
-
-                /*$(function() {
-                    var number = $('#actual .list');
-                    for (i = 0; i < number.length; i++) {
-                        var characters = number.text().length;
-                        $('#years .list').html(characters);
-                    }
-                });*/
-
-                /*$(function() {
-                    var number = $('#actual .list');
-                    for (i = 0; i < number.length; i++) {
-                        $('#years .list').html(number[i].text().length);
-                    }
-                });
-                */
-
                 $(function() {
+                    /*var number = $('#actual .list');
+                        for (i = 0; i < number.length; i++) {
+                            var characters = number.text().length;
+                            for (e = 0; e < characters; e++) {
+                                $('#years .list').html(e);
+                            }
+                        }
+                    });
+                    */
+
+                    /*$(function() {
+                        var number = $('#actual .list');
+                        for (i = 0; i < number.length; i++) {
+                            var characters = number.text().length;
+                            $('#years .list').html(characters);
+                        }
+                    });*/
+
+                    /*$(function() {
+                        var number = $('#actual .list');
+                        for (i = 0; i < number.length; i++) {
+                            $('#years .list').html(number[i].text().length);
+                        }
+                    });
+                    */
+
+
                     var $list = $('#actual .list');
                     $('#years .list').text(function(i) {
                         return $list.eq(i).text().length;
@@ -214,12 +262,21 @@
 
     <div class="container">
         <div id="more-info">
+            <div id="more-info-pic-m">
+                <img src="me.JPG">
+            </div>
             <div id="more-info-me">
                 <h1>More about me</h1>
                 <p>Hello, I first got interested in Computer Science after discovering my passion for learning. I've always loved art and found potentiality through programming. I have an interest in colorscapes in designs and the desire to continually explore technology. </p>
             </div>
+
             <div id="more-info-pic">
                 <img src="me.JPG">
+            </div>
+
+            <div id="more-info-me-m">
+                <h1>More about me</h1>
+                <p>Hello, I first got interested in Computer Science after discovering my passion for learning. I've always loved art and found potentiality through programming. I have an interest in colorscapes in designs and the desire to continually explore technology. </p>
             </div>
         </div>
     </div>
