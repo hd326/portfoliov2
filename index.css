@@ -150,7 +150,6 @@ header {
 }
 */
 
-
 #showcase .showitem:nth-of-type(1) {
     background: linear-gradient(to bottom right, #cdffea, #ffffff);
 }
@@ -206,6 +205,7 @@ header {
     margin: auto;
     margin-top: 75px;
     font-size: 24px;
+    overflow: hidden;
 }
 
 #additional nav ul li {
@@ -239,10 +239,10 @@ header {
     transform: scaleX(1);
 }
 
+/*
+
 #additional nav ul li:hover {
-    /*
     background: linear-gradient(to right, #7edfff, #ccffd3);
-    */
     color: white;
     transition: all ease-in .3s;
 }
@@ -270,16 +270,61 @@ header {
     font-size: 14px;
 }
 
-/*
 #additional tr:hover {
     background: linear-gradient(to right, #82e0ff, #ccffd3);
     color: white;
     transition: all ease-in .3s;
 }
+
 */
 
-#additional td a{
-    text-decoration:none;
+.additionalrowsitem {
+    display: grid;
+    grid-template-columns: 1fr .4fr .2fr;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    line-height: 75px;
+    padding: 5px 20px;
+    position: relative;
+    font-size: 18px;
+}
+
+.additionalrowsitem .additionalrowsitemname {
+    text-align: left;
+}
+
+.additionalrowsitem .additionalrowsitemtype {
+    text-align: left;
+}
+
+.additionalrowsitem .additionalrowsitemdate {
+    text-align: right;
+}
+
+.additionalrowsitem .additionalrowsitemdate:after,
+.additionalrowsitem .additionalrowsitemdate:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    margin: auto;
+    height: 1px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+}
+
+
+#additional td a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    width: 100%;
+}
+
+.additionalrowsitem a {
+    text-decoration: none;
     color: black;
     display: block;
     width: 100%;
@@ -439,13 +484,10 @@ header {
 }
 
 
-#more-info h1{
-    
-}
+#more-info h1 {}
 
-#more-info p{
-    
-}
+#more-info p {}
+
 .container #more-info-me-m {
     display: none;
 }
@@ -857,11 +899,11 @@ header {
     }
 
     .container #more-info h1 {
-        text-align:center;
+        text-align: center;
     }
 
     .container #more-info p {
-        text-align:center;
+        text-align: center;
     }
 
     .container #more-info-pic {
@@ -880,7 +922,7 @@ header {
 
     .container #more-info-pic-m {
         width: 75%;
-        transform:translateX(25%);
+        transform: translateX(25%);
         display: block;
     }
 
@@ -891,10 +933,8 @@ header {
         -o-transform: rotate(90deg);
         transform: rotate(90deg);
     }
-    
-    .container #more-info #more-info-pic-m {
-        
-    }
+
+    .container #more-info #more-info-pic-m {}
 
     .container #startproject {
         text-align: center;
@@ -913,5 +953,15 @@ header {
 
     .container #socialmedia nav ul li:nth-of-type(4) span {
         margin-top: 30px;
+    }
+    
+    .container #additional{
+        width: 95%;
+    }
+    
+    .additionalrowsitem{
+        width: 100%;
+        grid-template-columns: 1fr .4fr .2fr;
+        font-size: 12px;
     }
 }
