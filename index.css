@@ -76,6 +76,13 @@ header {
     position: relative;
 }
 
+#introduction h1 {}
+
+@media(max-width: 768px) {}
+
+@media(max-width: 1024px) {}
+
+
 #wreath {
     content: '';
     height: 2px;
@@ -100,24 +107,29 @@ header {
 
 .showitem {
     background-color: #d8ffed;
-    width: 100%;
-    height: 100%;
-    position: relative;
     z-index: 1;
     border-radius: 1.75px;
-    display: block;
+    position: relative;
+    height: 100%;
+    width: 100%;
 }
 
 .showitem img {
-    display: block;
     opacity: .75;
     padding: 50px;
     width: 100%;
+    height: 100%;
 }
 
 .showitem:hover img {
-    transition: 1s ease;
+
     opacity: 1;
+    visibility: hidden;
+}
+
+.showitem:hover #showitemhelp {
+    display: block;
+    transition: all 1s ease;
 }
 
 .showitem:nth-of-type(1) {
@@ -136,21 +148,27 @@ header {
     background: linear-gradient(to bottom right, #ffdccd, #ffffff)
 }
 
-.showitem img {}
-
 .picture {
     width: 100%;
     height: 100%;
     z-index: 9999;
+    position: relative;
 }
 
+
+
 #hidden {
+    display: none;
+}
+
+.hidden2 {
     display: none;
 }
 
 #showitemhelp {
     position: absolute;
     width: 100%;
+    height: 100%;
     z-index: 2;
     color: #797979;
     letter-spacing: 2px;
@@ -162,8 +180,6 @@ header {
     width: 100%;
     height: 100%;
 }
-
-.hidden2 {}
 
 #additional {
     width: 50%;
@@ -243,6 +259,7 @@ header {
 .list:hover {
     color: #777777;
 }
+
 
 #segue {
     width: 35%;
@@ -418,11 +435,296 @@ header {
     margin-top: 100px;
     margin-left: 50px;
     margin-bottom: 100px;
-
-
 }
 
 #socialmedia nav ul li:hover {
     color: #a4ffa4;
     transition: .3s ease;
+}
+
+@media(max-width:768px) {
+    .container #introduction {
+        width: 75%;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .container #introduction h1 {
+        font-size: 20px;
+    }
+
+    .container #showcase {
+        width: 75%;
+        transform: translateX(%);
+        margin-top: 50px;
+    }
+
+    .container #additional {
+        width: 60%;
+    }
+
+    #additional table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .container #additional table {
+        transform: translateX(%);
+    }
+
+    .container .showitem {
+        margin-top: 50px;
+    }
+
+    .container #segue {
+        width: 100%;
+        letter-spacing: 2px;
+    }
+
+    .container #segue #interest {
+        font-size: 12px;
+
+    }
+
+    .container #segue #skills {
+        font-size: 12px;
+
+    }
+
+    .container #segue #interest .list {
+        font-size: 12px;
+
+    }
+
+    .container #segue #skills .list {
+        font-size: 12px;
+
+    }
+
+    .container #education {
+        width: 100%;
+        transform: translateX(0%);
+    }
+
+    .container #more-info {
+        width: 80%;
+        transform: translateX(0%);
+    }
+
+    .container #startproject {
+        text-align: center;
+        transform: translateX(0%);
+    }
+
+    .container #socialmedia {
+        display: inline;
+        font-size: 12px;
+    }
+    .container #socialmedia nav {
+        margin-top: 50px;
+        margin-right: 50px;
+    }
+
+    .container #socialmedia nav ul li:nth-of-type(4) span {
+        margin-top: 30px;
+    }
+}
+
+@media(max-width: 1024px) {
+    .container #segue {
+        width: 60%;
+    }
+    .container #introduction {
+        width: 75%;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .container #introduction h1 {
+        font-size: 20px;
+    }
+
+    .container #showcase {
+        width: 75%;
+        transform: translateX(%);
+        margin-top: 50px;
+    }
+
+    .container #additional {
+        width: 60%;
+    }
+
+    .container #additional table {
+        transform: translateX(%);
+    }
+
+    #additional table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .container .showitem {
+        margin-top: 50px;
+    }
+
+    .container #segue {
+        width: 60%;
+        letter-spacing: 2px;
+    }
+
+    .container #segue #interest {
+        font-size: 12px;
+
+    }
+
+    .container #segue #skills {
+        font-size: 12px;
+
+    }
+
+    .container #segue #interest .list {
+        font-size: 12px;
+
+    }
+
+    .container #segue #skills .list {
+        font-size: 12px;
+
+    }
+
+    .container #education {
+        width: 100%;
+        transform: translateX(0%);
+    }
+
+    .container #more-info {
+        width: 80%;
+        transform: translateX(0%);
+    }
+
+    .container #startproject {
+        text-align: center;
+        transform: translateX(0%);
+    }
+
+    .container #socialmedia {
+        display: inline;
+        font-size: 12px;
+    }
+    .container #socialmedia nav {
+        margin-top: 50px;
+        margin-right: 50px;
+    }
+
+    .container #socialmedia nav ul li:nth-of-type(4) span {
+        margin-top: 30px;
+    }
+}
+
+@media(max-width: 375px) {
+    .container #segue {
+        width: 60%;
+    }
+    .container #introduction {
+        width: 75%;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .container #introduction h1 {
+        font-size: 20px;
+    }
+
+    .container #showcase {
+        width: 75%;
+        display: block;
+        transform: translateX(%);
+        margin-top: 50px;
+    }
+
+    .container #additional {
+        width: 80%;
+    }
+
+    #additional table {
+        border-collapse: collapse;
+        transform: translateX(-0%);
+    }
+
+    .container .showitem {
+        margin-top: 50px;
+    }
+
+    .container #segue {
+        width: 100%;
+        letter-spacing: 2px;
+        display: block;
+    }
+
+    .container #segue #interest {
+        font-size: 12px;
+    }
+
+    .container #segue #skills {
+        font-size: 12px;
+    }
+
+    .container #segue #interest .list {
+        font-size: 12px;
+    }
+
+    .container #segue #skills .list {
+        font-size: 12px;
+    }
+
+    .container #education {
+        width: 100%;
+        transform: translateX(0%);
+    }
+
+    .container #more-info {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .container #more-info h1 {
+        transform: translateY(350%);
+    }
+
+    .container #more-info p {
+        transform: translateY(50%);
+    }
+
+    .container #more-info #more-info-pic {
+        transform:translate(50%, -275%);
+        width: 50%;
+    }
+
+    .container #more-info #more-info-pic img {
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+        text-align: center;
+    }
+
+    .container #startproject {
+        text-align: center;
+        transform: translateX(0%);
+    }
+
+    .container #socialmedia {
+        display: inline;
+        font-size: 12px;
+    }
+    .container #socialmedia nav {
+        margin-top: 50px;
+        margin-right: 50px;
+    }
+
+    .container #socialmedia nav ul li:nth-of-type(4) span {
+        margin-top: 30px;
+    }
 }
