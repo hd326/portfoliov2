@@ -383,7 +383,7 @@ header {
     padding: 50px;
     color: #2f2f2f;
     display: grid;
-    grid-template-columns: 1fr .2fr;
+    grid-template-columns: 1fr .5fr;
 }
 
 #more-info p {
@@ -442,19 +442,32 @@ header {
     transition: .3s ease;
 }
 
-@media screen and(max-width:768px) {
+@media screen and (max-width: 1336px) {
+    .container #segue {
+        width: 60%;
+    }
     .container #introduction {
-        width: 75%;
         text-align: center;
-        overflow: hidden;
     }
 
     .container #introduction h1 {
         font-size: 20px;
     }
 
+    .container #wreath {
+        content: '';
+        height: 2px;
+        margin: auto;
+        overflow: hidden;
+        margin-top: 35px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        border-radius: 100%;
+    }
+
     .container #showcase {
-        width: 75%;
+        width: 60%;
         transform: translateX(%);
         margin-top: 50px;
     }
@@ -463,13 +476,13 @@ header {
         width: 60%;
     }
 
+    .container #additional table {
+        transform: translateX(%);
+    }
+
     #additional table {
         width: 100%;
         border-collapse: collapse;
-    }
-
-    .container #additional table {
-        transform: translateX(%);
     }
 
     .container .showitem {
@@ -477,7 +490,7 @@ header {
     }
 
     .container #segue {
-        width: 100%;
+        width: 60%;
         letter-spacing: 2px;
     }
 
@@ -530,6 +543,9 @@ header {
     }
 }
 
+
+
+
 @media screen and (max-width: 1024px) {
     .container #segue {
         width: 60%;
@@ -537,7 +553,7 @@ header {
     .container #introduction {
         width: 75%;
         text-align: center;
-        overflow: hidden;
+        
     }
 
     .container #introduction h1 {
@@ -600,6 +616,93 @@ header {
     .container #more-info {
         width: 80%;
         transform: translateX(0%);
+    }
+
+    .container #startproject {
+        text-align: center;
+        transform: translateX(0%);
+    }
+
+    .container #socialmedia {
+        display: inline;
+        font-size: 12px;
+    }
+    .container #socialmedia nav {
+        margin-top: 50px;
+        margin-right: 50px;
+    }
+
+    .container #socialmedia nav ul li:nth-of-type(4) span {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container #introduction {
+        width: 75%;
+        text-align: center;
+        
+    }
+
+    .container #introduction h1 {
+        font-size: 20px;
+    }
+
+    .container #showcase {
+        width: 75%;
+        transform: translateX(%);
+        margin-top: 50px;
+    }
+
+    .container #additional {
+        width: 60%;
+    }
+
+    #additional table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .container #additional table {
+        transform: translateX(%);
+    }
+
+    .container .showitem {
+        margin-top: 50px;
+    }
+
+    .container #segue {
+        width: 100%;
+        letter-spacing: 2px;
+    }
+
+    .container #segue #interest {
+        font-size: 12px;
+
+    }
+
+    .container #segue #skills {
+        font-size: 12px;
+
+    }
+
+    .container #segue #interest .list {
+        font-size: 12px;
+
+    }
+
+    .container #segue #skills .list {
+        font-size: 12px;
+
+    }
+
+    .container #education {
+        width: 100%;
+        transform: translateX(0%);
+    }
+
+    .container #more-info {
+        width: 100%;
     }
 
     .container #startproject {
@@ -628,7 +731,7 @@ header {
     .container #introduction {
         width: 75%;
         text-align: center;
-        overflow: hidden;
+
     }
 
     .container #introduction h1 {
@@ -688,17 +791,14 @@ header {
         height: 100%;
     }
 
-    .container #more-info h1 {
-        transform: translateY(350%);
-    }
+    .container #more-info h1 {}
 
-    .container #more-info p {
-        transform: translateY(50%);
-    }
+    .container #more-info p {}
 
     .container #more-info #more-info-pic {
-        transform: translate(50%, -275%);
+        margin-top: 50px;
         width: 50%;
+        transform: translate(150%, -550%);
     }
 
     .container #more-info #more-info-pic img {
@@ -707,7 +807,6 @@ header {
         -ms-transform: rotate(90deg);
         -o-transform: rotate(90deg);
         transform: rotate(90deg);
-        text-align: center;
     }
 
     .container #startproject {
